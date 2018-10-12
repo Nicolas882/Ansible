@@ -1,8 +1,6 @@
 ---
-- name: Instalación y configuración de un stack para sql
+- name: Instalación y configuración de un stack para web
   hosts: sql
-    become: yes
   remote_user: root
-  become_user: root
   roles:
    - sqlserver
